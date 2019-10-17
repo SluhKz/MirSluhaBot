@@ -15,7 +15,7 @@ def cmd_start(message):
 
 keyboardMenu = telebot.types.ReplyKeyboardMarkup(True)
 keyboardMenu.row('Контакты')
-
+keyboardMenu.row('Новости')
 @bot.message_handler(commands=['start'])
 def text_message(message):
 
@@ -52,7 +52,7 @@ def text_message(message):
     #Новости================Новости================Новости================Новости================Новости================
     elif message.text == 'Новости':
 
-        bot.send_message(message.chat.id, 'НОВОСТИ!!!!!!!!!!!!!!!!!!!!')
+        bot.send_message(message.chat.id, 'https://t.me/mirsluha')
     #Акции============Акции============Акции============Акции============Акции============Акции============Акции========
     elif message.text == 'Акции':
 

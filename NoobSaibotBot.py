@@ -15,9 +15,7 @@ def cmd_start(message):
 
 keyboardMenu = telebot.types.ReplyKeyboardMarkup(True)
 keyboardMenu.row('Контакты')
-keyboardMenu.row('Новости')
-keyboardMenu.row('Акции')
-keyboardMenu.row('Записаться на приём')
+
 @bot.message_handler(commands=['start'])
 def text_message(message):
 

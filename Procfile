@@ -1,1 +1,1 @@
-web: python NoobSaibotBot.py
+web: python mirsluhabot.py

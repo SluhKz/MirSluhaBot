@@ -26,7 +26,7 @@ def text_message(message):
 
 keyboardContacts = telebot.types.ReplyKeyboardMarkup(True)
 keyboardContacts.row('Алматы', 'Астана', 'Актау')
-keyboardContacts.row('Атырау', 'Шамкент', 'Караганда')
+keyboardContacts.row('Атырау', 'Шымкент', 'Караганда')
 keyboardContacts.row('Назад')
 @bot.message_handler(content_types=['text'])
 def text_message(message):
@@ -45,7 +45,7 @@ def text_message(message):
         bot.send_message(message.chat.id, adresa.Aktau)
     elif message.text == 'Атырау':
         bot.send_message(message.chat.id, adresa.Atyrau)
-    elif message.text == 'Шамкент':
+    elif message.text == 'Шымкент':
         bot.send_message(message.chat.id, adresa.Shymkent)
     elif message.text == 'Караганда':
         bot.send_message(message.chat.id, adresa.Karaganda)

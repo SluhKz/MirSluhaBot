@@ -1,1 +1,1 @@
-web: python mirsluhabot.py
+bot: python mirsluhabot.py
